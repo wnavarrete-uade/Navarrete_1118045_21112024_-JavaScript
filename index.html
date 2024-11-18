@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio Javascript</title>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const nombre = prompt("Ingrese su nombre:");
+            const apellido = prompt("Ingrese su apellido:");
+            const ciudad = prompt("Ingrese su ciudad:");
+            alert(`¡Bienvenido, ${nombre} ${apellido} de ${ciudad}!`);
+
+            const fechaNacimiento = prompt("Ingrese su fecha de nacimiento (YYYY-MM-DD):");
+            const fechaNacimientoObj = new Date(fechaNacimiento);
+            const hoy = new Date();
+
+            // Calcular la diferencia en días
+            const diferenciaTiempo = hoy - fechaNacimientoObj;
+            const diasVividos = Math.floor(diferenciaTiempo / (1000 * 60 * 60 * 24));
+            alert(`Has vivido aproximadamente ${diasVividos} días.`);
+        });
+    </script>
+</head>
+<body>
+    <h1>Bienvenido</h1>
+</body>
+</html>
