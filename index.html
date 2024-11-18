@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejercicio Javascript</title>
+    <title>Ejercicio Javascript - Walter Navarrete</title>
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             const nombre = prompt("Ingrese su nombre:");
             const apellido = prompt("Ingrese su apellido:");
             const ciudad = prompt("Ingrese su ciudad:");
-            alert(`¡Bienvenido, ${nombre} ${apellido} de ${ciudad}!`);
+            alert(`Te damos la bienvenida, ${nombre} ${apellido} de ${ciudad}!`);
 
             const fechaNacimiento = prompt("Ingrese su fecha de nacimiento (YYYY-MM-DD):");
             const fechaNacimientoObj = new Date(fechaNacimiento);
@@ -18,11 +18,11 @@
             // Calcular la diferencia en días
             const diferenciaTiempo = hoy - fechaNacimientoObj;
             const diasVividos = Math.floor(diferenciaTiempo / (1000 * 60 * 60 * 24));
-            alert(`Has vivido aproximadamente ${diasVividos} días.`);
+            alert(`Has vivido hasta el día de hoy aproximadamente ${diasVividos} días.`);
         });
     </script>
 </head>
 <body>
-    <h1>Bienvenido</h1>
+    <h1>Ejercicio Javascript - Walter Navarrete</h1>
 </body>
 </html>
